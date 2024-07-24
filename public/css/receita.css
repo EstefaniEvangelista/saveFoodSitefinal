@@ -1,0 +1,117 @@
+/* Seleciona cada um dos elementos do html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+    color: #0b0b0b;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family: "Playwrite MX", cursive;
+}
+
+
+
+.receita img {
+    width: 89%;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-left: 42px;
+    margin-top: 20px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.card {
+    /* background-color: #fcfcfc; */
+    width: 678px;
+    height: 200px;
+    /* margin-left: 0px; */
+    margin-top: auto;
+}
+
+.card h2{
+    color: #0b0b0b;
+    text-align: center;
+    /* font-family: "Playwrite MX", cursive; */
+}
+
+.receita{
+    /* background-color: #f9f6f6; */
+    width: 680px;
+    height: 560px;
+    margin-left: 450px;
+    margin-top: 20px;
+    border: 1px solid rgb(10, 10, 10); 
+    border-radius: 10px;
+}
+
+.list h3{
+    border-bottom: 1px dotted #000; /* Traço pontilhado preto com 1 pixel de espessura */
+    padding-bottom: 5px; 
+}
+
+.listReceitas{
+    /* width: 380px;
+    height: 360px;
+    margin-left: 450px;
+    margin-top: 20px;
+    border: 1px solid rgb(10, 10, 10); 
+    border-radius: 10px; */
+    width: calc(25% - 20px); /* Calcula a largura de cada card, considerando margens */
+    margin: 10px; /* Margem entre os cards */
+    padding: 20px; /* Espaçamento interno dos cards */
+    background-color: #f0f0f0; /* Cor de fundo dos cards (exemplo) */
+    border: 1px solid #ccc; /* Borda dos cards (exemplo) */
+    box-sizing: border-box;
+}
+
+.listReceitas img{
+    width: 310px;
+    height: 260px;
+}
+
+.listReceitas h2 {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.listReceitas p {
+    margin-top: 18px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.container{
+    display: flex; 
+    justify-content: space-between; /* Distribui os cards com espaçamento igual entre eles */
+    flex-wrap: wrap; /* Permite que os cards quebrem para uma nova linha se necessário */
+
+}
+
+.btn-danger{
+    /* margin-left: 100px;
+   display: flex; */
+   display: inline-block;
+   margin: 5px;
+   margin-left: 100px;
+   margin-top: 20px;
+
+}
+
+
+

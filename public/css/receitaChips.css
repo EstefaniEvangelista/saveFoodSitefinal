@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.col-lg-8 img{
+    width: 550px;
+    height: 350px;
+    top: 10%;
+    margin-left: 250px;
+
+}
+
+.display-4{
+    margin-left: 290px;
+    margin-top: -28px;
+}
+
+.recheio{
+    color:  #BF212E;
+    text-align: center;
+}

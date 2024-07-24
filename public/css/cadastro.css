@@ -1,0 +1,72 @@
+/* Seleciona cada um dos elementos do html */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formulario-cadastro{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: #3CBE0E; */
+}
+.formulario-cadastro h3{
+  text-align: center;
+}
+/* .formulario-cadastro .cadastrar_btn button{
+
+} */
+.form-cadastro {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: #0e0e0e;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.div-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    margin: 20px 0 20px 0;
+}
+
+
+
+input[type="number"] {
+    width: 100px;
+  }
+  
+  input + span {
+    padding-right: 30px;
+  }
+  
+ 
+
+  .cadastar_btn{
+    margin: auto;
+    text-align: center;
+  }
+
+  .cadastrar_btn button{
+    width: 60%;
+    background-color: rgb(8, 8, 8);  
+    border-color: rgb(53, 54, 53);
+    size: 16px;
+    text-align: center;
+    
+}
+:hover.cadastrar_btn button{
+  background-color: rgb(67, 95, 68);
+  border-color: rgb(33, 141, 36); 
+
+}
+
+
+

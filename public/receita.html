@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SAVE FOOD</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logoSite.png" width="90" height="90" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cadastro.html">CADASTRO DE PRODUTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cadastroUsuario.html">CADASTRO DE USUÁRIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./receita.html">RECEITAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="receita-destaque">
+            <div class="container">
+                <h1 class="text-red">Receita do Dia</h1>
+                <br>
+                <article class="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Torta de Abobora Saborosa</h2>
+                            <ol>
+                                <li>Aboborá</li>
+                                <li>Alecrim</li>
+                                <li>Aveia em flocos</li>
+                                <li>Ovo</li>
+                            </ol>
+                            <p>
+                                In tristique est in cursus volutpat. Aenean aliquet vehicula feugiat. Nunc elementum ipsum a mi semper, ut mattis dui mattis. Nunc velit magna, elementum id finibus quis, accumsan ut metus. Phasellus convallis dictum justo, eget sollicitudin turpis porttitor eget. Sed mauris mauris, euismod a egestas eget, maximus id sem. Curabitur eget interdum magna. Proin lacus libero, rhoncus eu nunc sed, interdum auctor ligula. Sed et risus nec est vulputate tempus.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="mainImage" src="./img/1.webp" alt="Saúde no prato logo">
+                        </div>
+                    </div>
+                </article>
+                <br>
+            </div>
+        </section>
+        <section id="receitas">
+            <div class="container">
+                <h2 class="text-red text-center">Lista de receitas</h2>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <article class="itemCard">
+                            <div class="thumbnail">
+                                <img src="./img/rocambole.jpg" alt="Rocombole">
+                            </div>
+                            <h4>Rocombolé de Uva</h4>
+                            <p>Deliciosa receita de Rocambole de Uva fácil.</p>
+                            <p>
+                                <a class="btn btn-danger" href="./receitaRocambole.html">Saiba mais</a>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="itemCard">
+                            <div class="thumbnail">
+                                <img src="./img/salada.webp" alt="saladacesar">
+                            </div>
+                            <h4>Salada Caesar</h4>
+                            <p>Deliciosa receita de Salada Caesar super fácil.</p>
+                            <p>
+                                <a class="btn btn-danger" href="./receitaSalada.html">Saiba mais</a>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="itemCard">
+                            <div class="thumbnail">
+                                <img class="cheesecakeMorangos" src="./img/cheesecakeMorango.webp" alt="Cheesecake De Morangos">
+                            </div>
+                            <h4>Cheesecake De Morangos</h4>
+                            <p>Deliciosa receita de Cheesecake de morango fácil.</p>
+                            <p>
+                                <a class="btn btn-danger" href="./receitaMorango.html">Saiba mais</a>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="itemCard">
+                            <div class="thumbnail">
+                                <img class="espaguetedeabrobrinha" src="./img/espagueteAbobrinha.jpg" alt="Espaguete de Abrobrinha">
+                            </div>
+                            <h4>Espaguete de Abobrinha</h4>
+                            <p>Deliciosa receita de Espaguete de abobrinha fácil.</p>
+                            <p>
+                                <a class="btn btn-danger" href="./receitaespaguete.html">Saiba mais</a>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <div class="imageCenter">
+                        <img src="./img/logoSite.png" width="90" height="90" alt="logo" class="idimg">
+                    </div>
+                    <div id="footer_social_media">
+                        <a href="#" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+    
+                        <a href="#" target="_blank"><img src="./img/facebookNovo.png" alt="facebook"></a>
+    
+                        <a href="#" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+
+                        <a href="#" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Menu</h3>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./cadastro.html" class="footer-link">Cadastro Produtos</a>
+                    </li>
+                    <li>
+                        <a href="./cadastroUsuario.html" class="footer-link">Cadastro Usuário</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Receitas</h3>
+                    </li>
+                    <li>
+                        <a href="./receita.html" class="footer-link">Receitas</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer_copyright">
+                <!-- &#169 -->
+                Copyright &copy; 2024 - SaveFood.
+                    Todos os direitos reservados.
+            </div>
+        </footer>
+    </body>
+</html>
